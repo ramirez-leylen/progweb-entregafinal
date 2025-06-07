@@ -1,0 +1,47 @@
+:root { 
+    /* colors */
+    --bs-body-color: #505050;
+
+    --bs-primary: #e05986;
+    --bs-primary-rgb: 224, 89, 134;
+
+    --bs-secondary: #f185a9;
+    --bs-secondary-rgb: 241, 133, 169;
+
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color: var(--bs-secondary);
+    --bs-link-hover-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-decoration: none;
+    
+
+    /* fonts */
+    --bs-font-sans-serif: 'Raleway', sans-serif; 
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+/* SLIDER CONTROLS */
+.carousel-control-next.slider, .carousel-control-prev.slider {
+    opacity: 1;
+    margin: auto 0;
+    background-color: var(--bs-primary);
+    width: 2.5vw;
+    height: 3.5vw;
+    transition: all 0.5s;
+}
+
+.carousel-control-next.slider:hover, .carousel-control-prev.slider:hover {
+    background-color: var(--bs-secondary);
+    transition: all 0.5s;
+}
+
+.carousel-control-next-icon.slider, .carousel-control-prev-icon.slider {
+    width: 1.5vw;
+    height: 1.5vw;
+}
