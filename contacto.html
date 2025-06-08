@@ -33,64 +33,56 @@
 
 
     <!-- NAVBAR -->
-    <!-- <nav class="navbar navbar-expand-lg">
-        <div class="container text-center">
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </div>
-                </div>
-            </div>
-
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
             <a class="navbar-brand fs-2 header" href="index.html">
                 // EASY/<span class="text-primary">CUT</span>
             </a>
-        </div>
-    </nav> -->
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- CONTACT -->
-    <div class="container">
-        <h5 class="mt-5 text-center header">// CONTACTANOS</h5>
-        <!-- EMAIL FORM -->
-        <div class="row">
-        <form class="container my-5 col" 
-            action="https://formspree.io/f/xvgrzaab"
-            method="POST">
-
-            <h5 class="text-center header">// POR MAIL</h5>
-
-            <div class="mb-3">
-                <label for="email" class="form-label">Tu email:</label>
-                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-                
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="message" class="form-label">Tu mensaje:</label>
-                <textarea name="message" class="form-control" id="message" rows="3" 
-                    placeholder="Dejanos un comentario o sugerencia...">
-                </textarea>
-            </div>
-
-            <button type="submit" class="btn text-bg-primary">Enviar</button>
-        </form>
-
-    
-
-        <!-- WHATSAPP BUTTON -->
-        <div class="container text-center my-5 col">
-            <h5 class="text-center header mb-4">// O POR WHATSAPP</h5>
-            <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/5491140612590/?text=Hola%21%20Les%20tengo%20una%20sugerencia%20para%20EASY%2FCUT...">
-                <img src="img/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp">
-            <a/>
         </div>
+    </nav>
+
+
+    <!-- EMAIL FORM -->
+    <form class="container my-5" 
+        action="https://formspree.io/f/xvgrzaab"
+        method="POST">
+
+        <h5 class="text-center header">// DEJANOS TU OPINION</h5>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Tu email:</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="tumail@gmail.com" aria-describedby="emailHelp">
+            
         </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Tu mensaje:</label>
+            <textarea name="message" class="form-control" id="message" rows="3" 
+                placeholder="Dejanos un comentario o sugerencia...">
+            </textarea>
+        </div>
+
+        <button type="submit" class="btn text-bg-primary">Enviar</button>
+    </form>
+
+
+
+    <!-- WHATSAPP BUTTON -->
+    <div class="container text-center my-5">
+        <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/5491140612590/?text=Hola%21%20Les%20tengo%20una%20sugerencia%20para%20EASY%2FCUT...">
+            <img src="img/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp">
+        </a>
     </div>
 
 

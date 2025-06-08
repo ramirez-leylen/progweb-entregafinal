@@ -1,0 +1,70 @@
+/* variables */
+:root {
+    --light: #fff;
+    --dark: #505050;
+    --primary: #e05986;
+}
+
+/* defaults */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+}
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+button {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* colors */
+.bg-acc {
+    background-color: var(--primary);
+}
+.text-light {
+    color: var(--light);
+}
+.text-acc {
+    color: var(--primary);
+}
+
+
+
+/* text */
+.text-center {
+    text-align: center;
+}
+.heading {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+
+
+/* display */
+.hidden {
+    display: none;
+}
+
+
+
+/* containers */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+}
+
+
+
+/* padding and margin */

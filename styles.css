@@ -26,22 +26,20 @@
 
 
 
-/* SLIDER CONTROLS */
-.carousel-control-next.slider, .carousel-control-prev.slider {
-    opacity: 1;
-    margin: auto 0;
-    background-color: var(--bs-primary);
-    width: 2.5vw;
-    height: 3.5vw;
-    transition: all 0.5s;
+/* media query */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
 }
 
-.carousel-control-next.slider:hover, .carousel-control-prev.slider:hover {
-    background-color: var(--bs-secondary);
-    transition: all 0.5s;
-}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
 
-.carousel-control-next-icon.slider, .carousel-control-prev-icon.slider {
-    width: 1.5vw;
-    height: 1.5vw;
-}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
