@@ -11,8 +11,9 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
 
-    <!-- CSS -->
+    <!-- CSS AND JAVASCRIPT -->
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 
     <!-- GOOGLE FONTS -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
@@ -56,24 +57,25 @@
     <!-- EMAIL FORM -->
     <form class="container my-5" 
         action="https://formspree.io/f/xvgrzaab"
-        method="POST">
+        method="POST"
+        name="contactForm"
+        onsubmit="updateSubmitButton()">
 
         <h5 class="text-center header">// DEJANOS TU OPINION</h5>
 
         <div class="mb-3">
             <label for="email" class="form-label">Tu email:</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="tumail@gmail.com" aria-describedby="emailHelp">
-            
+            <input type="email" name="email" class="form-control" id="email" placeholder="tumail@gmail.com" aria-describedby="emailHelp" required onchange="validateEmail()">   
+            <p class="text-danger" id="emailFeedback"></p>
         </div>
 
         <div class="mb-3">
             <label for="message" class="form-label">Tu mensaje:</label>
-            <textarea name="message" class="form-control" id="message" rows="3" 
-                placeholder="Dejanos un comentario o sugerencia...">
-            </textarea>
+            <textarea name="message" class="form-control" id="message" rows="3" placeholder="Dejanos un comentario o sugerencia..." required onchange="validateMessage()" minlength="20"></textarea>
+            <p class="text-danger" id="messageFeedback"></p>
         </div>
 
-        <button type="submit" class="btn text-bg-primary">Enviar</button>
+        <button type="submit" class="btn text-bg-primary" id="submitButton" disabled>Enviar</button>
     </form>
 
 
